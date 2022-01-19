@@ -64,12 +64,12 @@ public class BookTest {
 		}
 		
 		try {
-			//buy()
+			//buy("21424", 10)
 			System.out.println("*********************도서 구매 : 21424, 10개*********************");
 			managerImp.buy("21424", 10);
 			System.out.println(managerImp.searchByisbn("21424").toString());
 			
-			//sell()
+			//sell("21424", 11)
 			System.out.println("*********************도서 판매 : 21424, 11개*********************");
 			managerImp.sell("21424", 11);
 			System.out.println(managerImp.searchByisbn("21424").toString());
