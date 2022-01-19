@@ -16,7 +16,7 @@ public class GameTest {
 	}
 	
 	public void stepUp() {
-		System.out.println("가가위바위보 게임을 시작합니다. 아래 보기 중 하나를 고르세요.");
+		System.out.println("가위바위보 게임을 시작합니다. 아래 보기 중 하나를 고르세요.");
 		System.out.println("1. 5 판 3 승");
 		System.out.println("2. 3 판 2 승");
 		System.out.println("3. 1 판 1 승");
@@ -29,13 +29,13 @@ public class GameTest {
 		case 1:
 			for(int i = 0; i<5; i++) {
 				turn();
-				if(score_c ==3 || score_u ==3) break;
+				if(score_c == 3 || score_u == 3) break;
 			}
 			break;
 		case 2:
 			for(int i = 0; i<3; i++) {
 				turn();
-				if(score_c ==2 || score_u ==2) break;
+				if(score_c == 2 || score_u == 2) break;
 			}
 			break;
 		case 3:
