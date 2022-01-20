@@ -34,7 +34,7 @@ public class Book {
 	@Override
 	public String toString() {
 		return isbn + "\t |  " + title +  "\t | " + author +  "\t|  " + publisher
-				+  "\t | " + price +  " |  " + desc +  " |  " + quantity;
+				+  "\t | " + price +  " |  " + desc +  "\t|  " + quantity;
 	}
 
 	public String getIsbn() {
