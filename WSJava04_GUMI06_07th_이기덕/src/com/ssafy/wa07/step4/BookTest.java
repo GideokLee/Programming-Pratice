@@ -35,7 +35,8 @@ public class BookTest {
 		//2. 데이터 파일이 존재 하는 경우
 		System.out.println("\n데이터 파일이 존재하는 경우");
 		System.out.println("*********************불러온 도서 전체 목록*********************");
-		managerImp.loadData();
+		
+		managerImp.loadTest();
 		result = managerImp.getList();
 		for(int i =0; i< result.size(); i++) {
 			System.out.println(result.get(i).toString());

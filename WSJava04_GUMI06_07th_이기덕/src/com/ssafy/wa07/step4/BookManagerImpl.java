@@ -154,9 +154,12 @@ public class BookManagerImpl implements IBookManager{
 		}
 	}
 	
-	public static void loadData() {
+	private static void loadData() {
 		LoadThread loadTh = new LoadThread(books);
 		loadTh.start();
 	}
 	
+	public void loadTest() {
+		loadData();
+	}
 }
