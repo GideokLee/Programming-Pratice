@@ -1,4 +1,4 @@
-package com.ssafy.wa07.step4;
+package com.ssafy.ws04.step4;
 
 public class Magazine extends Book{
 	private int year;

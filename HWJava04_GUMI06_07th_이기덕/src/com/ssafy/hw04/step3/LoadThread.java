@@ -1,4 +1,4 @@
-package com.ssafy.wa07.step4;
+package com.ssafy.hw04.step3;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -7,24 +7,24 @@ import java.io.ObjectInputStream;
 import java.util.ArrayList;
 
 public class LoadThread extends Thread{
-	private ArrayList<Book> data;
-	
-	public LoadThread(ArrayList<Book> books) {
-		this.data = data;
-	}
-	
+
 	@Override
 	public void run() {
 		FileInputStream fis = null;
 		ObjectInputStream ois = null;
 		try {
-			fis = new FileInputStream("book_data.dat");
+			fis = new FileInputStream("product.dat");
 			ois = new ObjectInputStream(fis);
+			ProductMgrImpl instance = ProductMgrImpl.getInstance();
+			ArrayList<Product> data = (ArrayList<Product>) ois.readObject();
+
+			for(int i=0; i<data.size(); i++) {
+				instance.add(data.get(i));
+			}
 			
-			data = (ArrayList<Book>) ois.readObject();
 		}
 		catch (FileNotFoundException e) {
-			System.out.println("등록된 도서가 없습니다.");
+			System.out.println("등록된 상품이 없습니다.");
 		}
 		catch (IOException e) {
 			e.printStackTrace();
@@ -32,7 +32,6 @@ public class LoadThread extends Thread{
 		catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		}
-		//6. 파일 입출력 관련 변수를 close() 호출하여 정리
 		finally {
 			try {
 				if(ois != null) {

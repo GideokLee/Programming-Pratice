@@ -1,4 +1,4 @@
-package com.ssafy.wa07.step4;
+package com.ssafy.ws04.step4;
 
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 public class BookManagerImpl implements IBookManager{
 	
-	private static ArrayList<Book> books;
+	private ArrayList<Book> books;
 	private static BookManagerImpl instance;
 	
 	private BookManagerImpl() {
@@ -127,6 +127,7 @@ public class BookManagerImpl implements IBookManager{
 		}
 		throw new ISBNNotFoundException(isbn);
 	}
+	
 	@Override
 	public void saveData() {
 		FileOutputStream fos = null;
@@ -154,12 +155,18 @@ public class BookManagerImpl implements IBookManager{
 		}
 	}
 	
-	private static void loadData() {
-		LoadThread loadTh = new LoadThread(books);
+	private void loadData() {
+		LoadThread loadTh = new LoadThread();
 		loadTh.start();
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 	}
 	
 	public void loadTest() {
+		books = new ArrayList<>();
 		loadData();
 	}
 }
