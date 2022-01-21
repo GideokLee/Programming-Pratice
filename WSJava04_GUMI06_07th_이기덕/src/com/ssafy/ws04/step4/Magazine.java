@@ -7,13 +7,11 @@ public class Magazine extends Book{
 	
 	public Magazine() {
 		super();
-		// TODO Auto-generated constructor stub
 		year = 0;
 		month = 0;
 	}
 	public Magazine(String isbn, String title, String author, String publisher, int price, String desc, int quantity, int year, int month) {
 		super(isbn, title, author, publisher, price, desc, quantity);
-		// TODO Auto-generated constructor stub
 		this.year = year;
 		this.month = month;
 		

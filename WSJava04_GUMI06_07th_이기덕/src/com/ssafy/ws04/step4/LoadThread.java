@@ -22,7 +22,6 @@ public class LoadThread extends Thread{
 			for(int i =0; i<data.size(); i++) {
 				manager.add(data.get(i));
 			}
-			
 		}
 		catch (FileNotFoundException e) {
 			System.out.println("등록된 도서가 없습니다.");
