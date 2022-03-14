@@ -19,9 +19,9 @@ export default{
         </div>
     </div>
     `, data() {
-        let newBook;
         return {
-            book: {}
+            book: {},
+            newbooks:{}
         }
     },  
     created() {
@@ -29,7 +29,7 @@ export default{
 
         let isbn = params.get('isbn');
         const bookList = localStorage.getItem("bookList");
-        newBook = {
+        let newBook = {
             books: []
         };
 
@@ -39,7 +39,8 @@ export default{
         else {
             localStorage.setItem("bookList", JSON.stringify(newBook));
         }
-        
+        this.newbooks = newBook;
+
         for(let i = 0; i < newBook.books.length; i++){
             if(newBook.books[i].isbn == isbn){
                 this.book = newBook.books[i];
@@ -52,12 +53,12 @@ export default{
         },
         modify(){
         
-            for(let i = 0; i < newBook.books.length; i++){
-                if(newBook.books[i].isbn == this.book.isbn){
-                    newBook.books[i] = this.book;
+            for(let i = 0; i < this.newbooks.books.length; i++){
+                if(this.newbooks.books[i].isbn == this.book.isbn){
+                    this.newbooks.books[i] = this.book;
                 }
             }
-            localStorage.setItem("bookList", JSON.stringify(newBook));
+            localStorage.setItem("bookList", JSON.stringify(this.newbooks));
             alert("수정이 완료되었습니다.");
             location.href = "list.html";
         }

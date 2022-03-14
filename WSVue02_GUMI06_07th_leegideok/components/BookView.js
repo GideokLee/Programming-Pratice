@@ -21,11 +21,11 @@ export default {
     </div>
     `,
     data() {
-        let index;
-        let newBook;
+
         return {
+            index :0,
             book: {},
-            books:[]
+            newbooks:{}
         }
     },
     created() {
@@ -35,7 +35,7 @@ export default {
         let isbn = params.get('isbn');
         // 위 isbn 변수를 사용해서 책 한권 가져오기
         const bookList = localStorage.getItem("bookList");
-        newBook = {
+        let newBook = {
             books: []
         };
 
@@ -45,13 +45,12 @@ export default {
         else {
             localStorage.setItem("bookList", JSON.stringify(newBook));
         }
-        this.books = newBook.books;
-
-        for(i = 0; i < newBook.books.length; i++){
+        this.newbooks = newBook;
+        
+        for(let i = 0; i < newBook.books.length; i++){
             if(newBook.books[i].isbn == isbn){
                 this.book = newBook.books[i];
-                index = i;
-                console.log("index" + index);
+                this.index = i;
             }
         }
         
@@ -64,8 +63,8 @@ export default {
             location.href = "modify.html?isbn=" + this.book.isbn;
         },
         deleteList(){
-            this.books.splice(index,1);
-            localStorage.setItem("bookList", JSON.stringify(newBook));
+            this.newbooks.books.splice(this.index,1);
+            localStorage.setItem("bookList", JSON.stringify(this.newbooks));
             location.href = "list.html";
         }
     } 
