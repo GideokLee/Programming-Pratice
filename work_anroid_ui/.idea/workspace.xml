@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b7daf554-2a60-45d2-9d73-8e103f8e7747" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../DebugPreTest/src/com/ssafy/school/person/PersonMgrImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DebugPreTest/src/com/ssafy/school/person/PersonMgrImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DebugPreTest/src/com/ssafy/school/subject/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DebugPreTest/src/com/ssafy/school/subject/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WSSpring01_GUMI06_07th_이기덕/target/m2e-wtp/web-resources/META-INF/maven/com.ssafy/ws/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../WSSpring01_GUMI06_07th_이기덕/target/m2e-wtp/web-resources/META-INF/maven/com.ssafy/ws/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WSSpring02_GUMI06_07th_이기덕/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../WSSpring02_GUMI06_07th_이기덕/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WSSpring02_GUMI06_07th_이기덕/src/main/java/com/ssafy/ws/HomeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WSSpring02_GUMI06_07th_이기덕/src/main/java/com/ssafy/ws/aop/LoggingAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/../WSSpring02_GUMI06_07th_이기덕/src/main/java/com/ssafy/ws/aop/LoggingAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WSSpring02_GUMI06_07th_이기덕/src/main/resources/application.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../WSSpring02_GUMI06_07th_이기덕/src/main/resources/application.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WSSpring02_GUMI06_07th_이기덕/target/classes/application.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../WSSpring02_GUMI06_07th_이기덕/target/classes/application.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WSSpring02_GUMI06_07th_이기덕/target/classes/com/ssafy/ws/HomeController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WSSpring02_GUMI06_07th_이기덕/target/classes/com/ssafy/ws/aop/LoggingAspect.class" beforeDir="false" afterPath="$PROJECT_DIR$/../WSSpring02_GUMI06_07th_이기덕/target/classes/com/ssafy/ws/aop/LoggingAspect.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WSSpring02_GUMI06_07th_이기덕/target/m2e-wtp/web-resources/META-INF/maven/com.ssafy/ws/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../WSSpring02_GUMI06_07th_이기덕/target/m2e-wtp/web-resources/META-INF/maven/com.ssafy/ws/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WSSpring02_GUMI06_07th_이기덕/target/m2e-wtp/web-resources/META-INF/maven/com.ssafy/ws/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../WSSpring02_GUMI06_07th_이기덕/target/m2e-wtp/web-resources/META-INF/maven/com.ssafy/ws/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work_spring/Servers/.settings/org.eclipse.wst.server.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../work_spring/Servers/.settings/org.eclipse.wst.server.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work_spring/Servers/VMware tc Server Developer Edition v4.1-config/catalina.policy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work_spring/Servers/VMware tc Server Developer Edition v4.1-config/catalina.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work_spring/Servers/VMware tc Server Developer Edition v4.1-config/context.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work_spring/Servers/VMware tc Server Developer Edition v4.1-config/jmxremote.access" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work_spring/Servers/VMware tc Server Developer Edition v4.1-config/jmxremote.password" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work_spring/Servers/VMware tc Server Developer Edition v4.1-config/server.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work_spring/Servers/VMware tc Server Developer Edition v4.1-config/tomcat-users.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work_spring/Servers/VMware tc Server Developer Edition v4.1-config/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work_spring/Spring01GenericXmlApplicationContext/target/classes/META-INF/maven/com.koitt/Spring01GenericXmlApplicationContext/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../work_spring/Spring01GenericXmlApplicationContext/target/classes/META-INF/maven/com.koitt/Spring01GenericXmlApplicationContext/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work_spring/Spring02FileSystemXmlApplicationContext/target/classes/META-INF/maven/Spring02FileSystemXmlApplicationContext/Spring02FileSystemXmlApplicationContext/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../work_spring/Spring02FileSystemXmlApplicationContext/target/classes/META-INF/maven/Spring02FileSystemXmlApplicationContext/Spring02FileSystemXmlApplicationContext/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work_spring/Spring03XmlImport/target/classes/META-INF/maven/Spring03XmlImport/Spring03XmlImport/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../work_spring/Spring03XmlImport/target/classes/META-INF/maven/Spring03XmlImport/Spring03XmlImport/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work_spring/Spring04GetBean/target/classes/META-INF/maven/Spring04GetBean/Spring04GetBean/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../work_spring/Spring04GetBean/target/classes/META-INF/maven/Spring04GetBean/Spring04GetBean/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work_spring/Spring04GetBean/target/classes/com/tophoon/bean/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/../work_spring/Spring04GetBean/target/classes/com/tophoon/bean/Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work_spring/Spring04GetBean/target/classes/com/tophoon/bean/TestDrive.class" beforeDir="false" afterPath="$PROJECT_DIR$/../work_spring/Spring04GetBean/target/classes/com/tophoon/bean/TestDrive.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work_spring/Spring05UtilProperties/target/classes/META-INF/maven/Spring05UtilProperties/Spring05UtilProperties/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../work_spring/Spring05UtilProperties/target/classes/META-INF/maven/Spring05UtilProperties/Spring05UtilProperties/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work_spring/Spring06SimpleAnnotation/target/classes/META-INF/maven/Spring06SimpleAnnotation/Spring06SimpleAnnotation/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../work_spring/Spring06SimpleAnnotation/target/classes/META-INF/maven/Spring06SimpleAnnotation/Spring06SimpleAnnotation/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work_spring/Spring07DIXml/target/classes/META-INF/maven/Spring07DIXml/Spring07DIXml/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../work_spring/Spring07DIXml/target/classes/META-INF/maven/Spring07DIXml/Spring07DIXml/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work_spring/Spring07DIXml/target/classes/com/tophoon/bean/KorMessageDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../work_spring/Spring07DIXml/target/classes/com/tophoon/bean/KorMessageDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work_spring/Spring08DIAnnotation/target/classes/META-INF/maven/Spring08DIAnnotation/Spring08DIAnnotation/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../work_spring/Spring08DIAnnotation/target/classes/META-INF/maven/Spring08DIAnnotation/Spring08DIAnnotation/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work_spring/Spring08DIAnnotation/target/classes/com/tophoon/bean/KorMessageDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../work_spring/Spring08DIAnnotation/target/classes/com/tophoon/bean/KorMessageDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work_spring/Spring11AOPAnnotation/target/classes/META-INF/maven/Spring11AOPAnnotation/Spring11AOPAnnotation/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../work_spring/Spring11AOPAnnotation/target/classes/META-INF/maven/Spring11AOPAnnotation/Spring11AOPAnnotation/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work_spring/Spring12AOPProduct/target/classes/META-INF/maven/Spring12AOPProduct/Spring12AOPProduct/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../work_spring/Spring12AOPProduct/target/classes/META-INF/maven/Spring12AOPProduct/Spring12AOPProduct/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work_spring/WSSpring03_GUMI06_07th_leegideok/target/m2e-wtp/web-resources/META-INF/maven/com.ssafy/ws/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../work_spring/WSSpring03_GUMI06_07th_leegideok/target/m2e-wtp/web-resources/META-INF/maven/com.ssafy/ws/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work_spring/WSSpring04_GUMI06_07th_leegideok/target/m2e-wtp/web-resources/META-INF/maven/com.ssafy/ws/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../work_spring/WSSpring04_GUMI06_07th_leegideok/target/m2e-wtp/web-resources/META-INF/maven/com.ssafy/ws/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work_spring/WSSpring05_GUMI06_07th_leegideok/target/m2e-wtp/web-resources/META-INF/maven/com.ssafy/ws/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../work_spring/WSSpring05_GUMI06_07th_leegideok/target/m2e-wtp/web-resources/META-INF/maven/com.ssafy/ws/pom.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\tg_04\.android\avd\Pixel_2_API_30.avd]" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="270uBlJgVP0kHPDxv7FGIVT1EeO" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="cidr.known.project.marker" value="true" />
+    <property name="com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable" value="ALL" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ws_android_ui_01_3_leegideok" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+  </component>
+  <component name="PsdUISettings">
+    <option name="MODULE_TAB" value="Properties" />
+    <option name="LAST_EDITED_SIGNING_CONFIG" value="debug" />
+  </component>
+  <component name="RecentsManager">
+    <key name="android.template.-114161461">
+      <recent name="com.ssafy.memo" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="ws_android_ui_01_3_leegideok.app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="INSPECTION_WITHOUT_ACTIVITY_RESTART" value="false" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b7daf554-2a60-45d2-9d73-8e103f8e7747" name="Default Changelist" comment="" />
+      <created>1648469190418</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1648469190418</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
