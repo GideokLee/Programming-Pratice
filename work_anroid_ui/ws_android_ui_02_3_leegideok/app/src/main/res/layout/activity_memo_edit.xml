@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="오늘 할일"
+            android:textSize="15sp">
+
+        </TextView>
+        <EditText
+            android:id="@+id/edit_Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:layout_weight="1"
+            android:enabled="false" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="상세 내용"
+            android:textSize="15sp">
+
+        </TextView>
+        <EditText
+            android:id="@+id/edit_Detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/layout_date"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="시간"
+            android:textSize="15sp">
+
+        </TextView>
+        <EditText
+            android:id="@+id/edit_Date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:layout_weight="1"
+            android:enabled="false" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/gray"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:layout_weight="1"
+            android:layout_margin="2dp"
+            android:id="@+id/btn_register"
+            android:text="저장">
+        </Button>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/gray"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:layout_weight="1"
+            android:id="@+id/btn_remove"
+            android:layout_margin="2dp"
+            android:text="삭제"
+            android:visibility="gone"
+            >
+        </Button>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/gray"
+            android:textColor="@color/black"
+            android:layout_margin="2dp"
+            android:id="@+id/btn_cancel"
+            android:textSize="30sp"
+            android:layout_weight="1"
+            android:text="취소">
+        </Button>
+    </LinearLayout>
+</LinearLayout>

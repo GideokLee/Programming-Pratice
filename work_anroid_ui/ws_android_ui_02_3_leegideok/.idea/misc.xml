@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/SSAFY/gumi06_07th_jeongsanghoon/work_android_ui/ws_android_ui_02_3_jeongsanghoon/app/src/main/res/layout/activity_main.xml" value="0.15534420289855072" />
+        <entry key="..\:/SSAFY/gumi06_07th_leegideok/work_anroid_ui/ws_android_ui_02_3_leegideok/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/SSAFY/gumi06_07th_leegideok/work_anroid_ui/ws_android_ui_02_3_leegideok/app/src/main/res/layout/activity_memo_edit.xml" value="0.29583333333333334" />
+        <entry key="..\:/SSAFY/gumi06_07th_leegideok/work_anroid_ui/ws_android_ui_02_3_leegideok/app/src/main/res/layout/list_item_layout.xml" value="0.33" />
+        <entry key="..\:/SSAFY/gumi06_07th_leegideok/work_anroid_ui/ws_android_ui_02_3_leegideok/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1905" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
