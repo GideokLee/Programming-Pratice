@@ -51,10 +51,5 @@ fun main(){
             }
         }
         println("#" + test_case.toString() + " " + result.toString())
-
-
-
     }
-
-
 }
