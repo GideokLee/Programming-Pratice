@@ -6,26 +6,24 @@ import android.content.Intent
 import android.content.pm.PackageManager
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.*
 import android.widget.*
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 
 class MainActivity : AppCompatActivity() {
-
-
-    // ListView에 들어갈 String List
-    private lateinit var listViewItems: ArrayList<String>
-
-    // ListView
-    private lateinit var listView: ListView
 
     // DB선언부
     private var memoDao = MemoDao()
 
-    private lateinit var memoList : List<MemoDto>
+    private lateinit var recycler: RecyclerView
+
+    private lateinit var memoAdapter : MemoAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -38,59 +36,51 @@ class MainActivity : AppCompatActivity() {
         // 앱 최초 실행 시, 권한 설정
         requirePermission()
 
-        listView = findViewById(R.id.listView)
-//        memoDao.insertMemo(MemoDto(0,"메모 앱 만들기1", "메모 앱 서로 연결하기","03-29 03:19"))
+        recycler = findViewById(R.id.recycler_view)
+        initAdapter()
+
+        //test data insert
+        // memoDao.insertMemo(MemoDto(0,"메모 앱 만들기1", "메모 앱 서로 연결하기","03-29 03:19"))
 //        memoDao.insertMemo(MemoDto(0,"메모 앱 만들기2", "메모 앱 UI 만들기","03-30 05:22"))
 //        memoDao.insertMemo(MemoDto(0,"메모 앱 만들기3", "메모 앱 설계하기","03-31 10:30"))
 
-        updateListViewItems()
-        updateListView()
-
-        // 등록 버튼과 리스트 항목을 터치할 때 사용할 Intent 객체 생성
-        val intent = Intent(this, MemoEditActivity::class.java)
-
-
-        // ListView에서 클릭한 Item에 들어있는 메모 데이터를 MemoEditActivity로 넘기기
-        listView.setOnItemClickListener { parent, view, position, id ->
-            intent.putExtra("Title", memoList[position].title)
-            intent.putExtra("Content", memoList[position].content)
-            intent.putExtra("Date", memoList[position].date)
-            intent.putExtra("Num", memoList[position].num)
-            memoEditActivityLauncher.launch(intent)
-        }
-        
-        // 2-4. ContextMenu를 ListView와 연결하기
-        registerForContextMenu(listView)
 
         // 새 Activity를 실행할 때는 onCreate만 실행되기 때문에
         // 앱 실행 전 메시지 수신 시 따로 실행해 줘야한다.
         createSMSMemo(this.intent)
     }
+    private fun initAdapter() {
+        val data : MutableList<MemoDto> = loadData()
+        memoAdapter = MemoAdapter()
+        memoAdapter.listData = data
+        Log.e("Main",  memoAdapter.listData[2].title)
 
-    // memoItemMgr 내용을 가지고 listViewItems 내용 업데이트
-    private fun updateListViewItems() {
-        // 새 리스트 만들기
-        listViewItems = arrayListOf()
-        memoList = memoDao.selectAllMemos()
-
-        // 메모 매니저에 있는 메모의 제목과 날짜를 조합하여 listViewItems에 담는다.
-        for (i: Int in 0 until memoList.size) {
-            val title = memoList[i].title
-            val date = memoList[i].date
-            listViewItems.add("$title $date")
+        recycler.apply {
+            adapter = memoAdapter
+            layoutManager = LinearLayoutManager(context, RecyclerView.VERTICAL, false)
+        }
+        memoAdapter.itemClickListener =  object : MemoAdapter.ItemClickListener {
+            override fun onClick(view: View, position: Int) {
+                val curr = memoAdapter.listData[position]
+                val intent = Intent(this@MainActivity, MemoEditActivity::class.java)
+                intent.putExtra("Title", curr.title)
+                intent.putExtra("Content", curr.content)
+                intent.putExtra("Date", curr.date)
+                intent.putExtra("Num", curr.num)
+                memoEditActivityLauncher.launch(intent)
+            }
         }
     }
 
-    // ListView와 Adapter 연결하고 ListView 내용 갱신하기
-    private fun updateListView() {
-        // Adapter 생성
-        val adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, listViewItems)
+    private fun loadData() : MutableList<MemoDto>{
+        var data = memoDao.selectAllMemos()
+        Log.e("Main", data.size.toString())
+        return data
+    }
 
-        // ListView와 Adapter 연결
-        listView.adapter = adapter
-
-        // ListView 변경 적용
-        adapter.notifyDataSetChanged()
+    private fun reLoadData(){
+        memoAdapter.listData = memoDao.selectAllMemos()
+        memoAdapter.notifyDataSetChanged()
     }
 
     // MemoEditActivity에서 MainActivity로 돌아올 때 수행할 작업
@@ -115,32 +105,17 @@ class MainActivity : AppCompatActivity() {
             when (state) {
                 0 -> memoDao.insertMemo(m)//등록
                 1 -> memoDao.updateMemo(m)//수정
-                2 -> memoDao.deleteMemo(num)
             }
-
-            updateListViewItems()
-            updateListView()
+            reLoadData()
         }
-    }
-
-    // 2-4. Context 메뉴 구현
-    override fun onCreateContextMenu(menu: ContextMenu, v: View, menuInfo: ContextMenu.ContextMenuInfo) {
-        super.onCreateContextMenu(menu, v, menuInfo)
-        menuInflater.inflate(R.menu.menu_context, menu)
     }
 
     // 길게 누를 시 실행
     override fun onContextItemSelected(item: MenuItem): Boolean {
-        // ListView에서 길게 누른 item의 정보를 가져오기
-        val info = item.menuInfo as AdapterView.AdapterContextMenuInfo  // 타입캐스팅 해야 item의 getPosition 함수 사용가능
-
         // position 값을 이용하여 memoItemMgr에서 제거
-        memoDao.deleteMemo(memoList[info.position].num)
+        memoDao.deleteMemo(memoAdapter.listData[item.order].num)
         Toast.makeText(applicationContext,"삭제되었습니다.", Toast.LENGTH_SHORT).show()
-
-        // 초기화
-        updateListViewItems()
-        updateListView()
+        reLoadData()
 
         return super.onContextItemSelected(item)
     }
@@ -191,12 +166,9 @@ class MainActivity : AppCompatActivity() {
             if (smsState) {
                 memoDao.insertMemo(memo)
             }
-
-            updateListViewItems()
-            updateListView()
+            reLoadData()
         }
     }
-
     // Activity를 계속 새로 실행하지 않고 재사용할 경우 onCreate가 아닌 onNewIntent를 불러온다.
     // Activity를 새로 시작하지 않고 재사용하기 위해 onNewIntent를 만들어준다.
     override fun onNewIntent(intent: Intent?) {

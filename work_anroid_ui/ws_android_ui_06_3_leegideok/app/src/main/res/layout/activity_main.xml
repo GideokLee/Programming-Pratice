@@ -4,22 +4,16 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-<!--    <ListView-->
-<!--        android:id="@+id/listView"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="0dp"-->
-<!--        android:layout_weight="1"/>-->
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
 
 <!--    <Button-->
 <!--        android:id="@+id/btnCreate"-->
 <!--        android:layout_width="match_parent"-->
 <!--        android:layout_height="wrap_content"-->
 <!--        android:text="등록"/>-->
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/recycler_view">
-        </androidx.recyclerview.widget.RecyclerView>
 
 </LinearLayout>
