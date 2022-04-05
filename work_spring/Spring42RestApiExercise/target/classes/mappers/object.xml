@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	
+<mapper namespace="com.ssafy.ws.model.repo.ObjectRepo">
+	<!-- userId와 pwd 값이 일치하는 사용자 찾기 -->
+	<select id="dbDay0103" parameterType="string" resultType="Map">
+		select * from country
+		where code like #{code}
+	</select>
+</mapper>

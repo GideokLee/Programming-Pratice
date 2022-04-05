@@ -1,5 +1,6 @@
 package com.ssafy.ws.aop;
 
+import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
@@ -12,17 +13,17 @@ import org.springframework.stereotype.Component;
 @Component
 @Aspect
 public class LoggingAspect {
-		
-	@Pointcut("excution(* com.ssafy.ws.model..*.*(..))")
-	public void profileTarget() {}
+	@Pointcut("execution( * com.ssafy.ws.model..*.*(..))")
+	public void pointCut(){}
 	
-	@Around("profileTarget()")
-	public Object trace(ProceedingJoinPoint joinPoint) throws Throwable {
-		System.out.println("hi");
+	@Before("pointCut()")
+	public void before(JoinPoint joinPoint) {
 		String signature = joinPoint.getSignature().toShortString();
+		Object args[] = joinPoint.getArgs();
+
 		System.out.println("Log : " + signature);
-		Object result = joinPoint.proceed();
-		return result;
+		System.out.println(args[0].toString());
+		
+		
 	}
-	
 }

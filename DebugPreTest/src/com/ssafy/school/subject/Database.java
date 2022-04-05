@@ -5,7 +5,7 @@ public class Database extends Subject {
 
 	public Database() {}
 	
-	public void Database(String name, int level, String databaseName) {
+	public Database(String name, int level, String databaseName) {
 		// super(name, level);
 	}
 

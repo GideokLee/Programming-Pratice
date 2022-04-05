@@ -60,7 +60,7 @@ public class PersonMgrImpl implements PersonMgr {
 	public void save(String fileName) throws IOException {
 		/* 기존에 저장된 파일 삭제하기 */
 		// 여기에 작성해주세요.
-
+		
 		ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(fileName));
 		oos.writeObject(people);
 		oos.flush();
@@ -71,8 +71,8 @@ public class PersonMgrImpl implements PersonMgr {
 
 		List<Person> list = new ArrayList<>();
 		list.addAll(people);
-
-		Collections.sort(list);
+		
+		Collections.sort(list, (a,b) -> a.getName() > b.getName());
 
 		return list;
 	}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ssafy.ws.model.repo.BoardRepo">
+	<!-- Board 정보를 저장한다. -->
+	<insert id="insert" parameterType="Board" useGeneratedKeys="true" keyProperty="no">
+		insert into vue_board(writer, title, content, regtime)
+		values (#{writer}, #{title}, #{content}, now())
+	</insert>
+	
+	<!-- Board 정보를 수정한다. -->
+	<update id="update" parameterType="Board">
+		update vue_board
+		set
+			writer = #{writer},
+			title = #{title},
+			content = #{content}
+		where no = #{no}
+	</update>
+
+	<!-- Board 정보를 삭제한다. -->
+	<delete id="delete" parameterType="string">
+		delete from vue_board
+		where no = #{no}
+	</delete>
+
+	<!-- Board 정보를 조회한다. -->
+	<select id="select" parameterType="string" resultType="Board">
+		select * from vue_board
+		where no = #{no}
+	</select>
+
+	<!-- Board에서 검색한다. -->
+	<select id="search" resultType="Board">
+		select * from vue_board
+	</select>
+</mapper>
