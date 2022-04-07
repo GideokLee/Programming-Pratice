@@ -16,7 +16,6 @@ class CustomRecyclerView : LinearLayout {
         val inflater = LayoutInflater.from(context)
         val view = inflater.inflate(R.layout.custom_item, this  , false)
         addView(view)
-
     }
 
 }
