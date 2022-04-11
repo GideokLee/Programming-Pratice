@@ -26,6 +26,7 @@ class MemoAdapter
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         // 한 행에 데이터를 넣어준다.
         holder.num.text = objects[position].num.toString()
+        
         holder.title.text = objects[position].title
         holder.contents.text = objects[position].content
         holder.date.text = Utils.formatter().format(objects[position].date)

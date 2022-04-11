@@ -36,7 +36,8 @@
 
     <com.ssafy.memo.CustomRecyclerView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:id="@+id/customRecy">
 
     </com.ssafy.memo.CustomRecyclerView>
 
