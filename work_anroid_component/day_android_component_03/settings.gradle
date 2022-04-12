@@ -1,0 +1,22 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "day_android_component_03"
+include ':1_local_service'
+include ':2_remote_service'
+include ':2_remote_activity'
+include ':3_aidl_service'
+include ':3_aidl_activity'
+include ':4_foreground_service'
+include ':5_notification'
