@@ -1,5 +1,4 @@
 package com.ssafy.cleanstore.service
-
 import android.app.Service
 import android.content.Intent
 import android.os.Binder
@@ -11,6 +10,7 @@ class BoundService : Service() {
 
     private lateinit var myBinder : IBinder
 
+    private lateinit var stuffDao: StuffDao
 
     override fun onBind(intent: Intent): IBinder {
         myBinder = MyBinder()
@@ -18,14 +18,21 @@ class BoundService : Service() {
 
     }
     fun selectAll() : MutableList<Stuff>{
-
+        return stuffDao.stuffSelectAll()
     }
     fun stuffInsert(stuff: Stuff): Long{
+        return stuffDao.stuffInsert(stuff)
+    }
+
+    override fun onCreate() {
+        super.onCreate()
+        stuffDao = StuffDao()
+        stuffDao.dbOpenHelper(this)
+        stuffDao.open()
     }
 }
 
 class MyBinder : Binder(){
-    private lateinit var stuffDao: StuffDao
 
     fun getService() : BoundService = BoundService()
 }

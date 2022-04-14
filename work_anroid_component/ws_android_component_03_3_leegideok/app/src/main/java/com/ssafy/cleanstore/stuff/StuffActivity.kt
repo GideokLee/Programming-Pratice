@@ -67,6 +67,8 @@ class StuffActivity : AppCompatActivity() {
                     ActionFlag.REGISTER -> {
                         val name = intent.getStringExtra("OName")
                         val count = intent.getIntExtra("OCount", -1)
+                        MyServiceConnection.myService.stuffInsert(Stuff(1,name!!,count))
+                        Toast.makeText(this, MyServiceConnection.myService.selectAll()[1].toString(),Toast.LENGTH_SHORT);
                         stuffList.add(Stuff(name, count))
                     }
 
