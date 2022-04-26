@@ -1,0 +1,22 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "JetPack02"
+include ':live_data1'
+include ':live_data2'
+include ':live_data2_sol'
+include ':live_data3'
+include ':live_data4'
+include ':room1'
+include ':1_note_sample'

@@ -11,13 +11,6 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/app2" />
-            <option value="$PROJECT_DIR$/data_binding" />
-            <option value="$PROJECT_DIR$/data_binding2" />
-            <option value="$PROJECT_DIR$/data_binding3" />
-            <option value="$PROJECT_DIR$/view_model_ktx" />
-            <option value="$PROJECT_DIR$/view_model_ktx2" />
-            <option value="$PROJECT_DIR$/view_model_ktx3" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
