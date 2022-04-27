@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--layout 태그는 이 레이아웃에 데이터 바인딩을 한다는 것을 의미한다.-->
+<!--이 태그가 레이아웃에 존재 할 경우 바인딩 클래스를 자동생성-->
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black">
+    </androidx.recyclerview.widget.RecyclerView>
+</layout>
