@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/SSAFY/gumi06_07th_leegideok/work_android_network/day_android_network_01/coroutine/src/main/res/layout/activity_coroutine_scope.xml" value="0.2689969604863222" />
+        <entry key="..\:/SSAFY/gumi06_07th_leegideok/work_android_network/day_android_network_01/coroutine/src/main/res/layout/activity_count_down.xml" value="0.2689969604863222" />
+        <entry key="..\:/SSAFY/gumi06_07th_leegideok/work_android_network/day_android_network_01/coroutine/src/main/res/layout/activity_main.xml" value="0.2689969604863222" />
+        <entry key="..\:/git/ja/workspace_android_network/day_android_network_01/app/src/main/res/drawable/ic_pause.xml" value="0.1645" />
+        <entry key="..\:/git/ja/workspace_android_network/day_android_network_01/app/src/main/res/drawable/ic_play.xml" value="0.1645" />
+        <entry key="..\:/git/ja/workspace_android_network/day_android_network_01/app/src/main/res/layout/activity_async_task.xml" value="0.36614583333333334" />
+        <entry key="..\:/git/ja/workspace_android_network/day_android_network_01/app/src/main/res/layout/activity_image.xml" value="0.36614583333333334" />
+        <entry key="..\:/git/ja/workspace_android_network/day_android_network_01/app/src/main/res/layout/activity_main.xml" value="0.3515625" />
+        <entry key="..\:/git/ja/workspace_android_network/day_android_network_01/app/src/main/res/layout/activity_run_on_ui_thread.xml" value="0.36614583333333334" />
+        <entry key="..\:/git/ja/workspace_android_network/day_android_network_01/app/src/main/res/layout/activity_start.xml" value="0.36614583333333334" />
+        <entry key="..\:/git/ja/workspace_android_network/day_android_network_01/app/src/main/res/layout/activity_start_with_handler.xml" value="0.36614583333333334" />
+        <entry key="..\:/git/ja/workspace_android_network/day_android_network_01/app/src/main/res/layout/activity_timer.xml" value="0.36614583333333334" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -80,5 +80,4 @@ object BoundServiceConnention : ServiceConnection {
     override fun onServiceDisconnected(name: ComponentName?) {
         isBound = false
     }
-
 }

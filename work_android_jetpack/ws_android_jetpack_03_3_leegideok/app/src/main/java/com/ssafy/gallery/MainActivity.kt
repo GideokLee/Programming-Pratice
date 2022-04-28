@@ -71,7 +71,6 @@ class MainActivity : AppCompatActivity(), GalleryFragment.Callbacks {
                 val result = info.outputData.getBoolean(GalleryWorker.EXTRA_RESULT, false)
                 when(info.state){
                     WorkInfo.State.SUCCEEDED ->{
-                        Log.d("succeeded", "toast")
                         if(result){
                             Toast.makeText(baseContext,"새로 변동된 사항이 있습니다.", Toast.LENGTH_SHORT).show()
                             val fragment = GalleryFragment.newInstance()
