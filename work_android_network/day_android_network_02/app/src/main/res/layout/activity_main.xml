@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="20dp">
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:hint="도시를 입력해주세요"
+        android:textSize="24sp"
+        android:textColor="@color/black"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_temp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/et_city"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:text="절대 온도"
+        android:gravity="center"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_temp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="온도 구하기"
+        app:layout_constraintTop_toBottomOf="@id/tv_temp"/>
+
+    <TextView
+        android:id="@+id/tv_response_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="응답 메시지"
+        app:layout_constraintTop_toBottomOf="@+id/btn_temp"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="41dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
