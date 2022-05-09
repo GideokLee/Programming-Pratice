@@ -1,0 +1,2 @@
+rootProject.name = "ble_template"
+include ':app'

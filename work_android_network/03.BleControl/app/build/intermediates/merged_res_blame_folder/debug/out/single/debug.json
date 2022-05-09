@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "C:\\SSAFY\\gumi06_07th_leegideok\\work_android_network\\03.BleControl\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "C:\\SSAFY\\gumi06_07th_leegideok\\work_android_network\\03.BleControl\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\SSAFY\\gumi06_07th_leegideok\\work_android_network\\03.BleControl\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\SSAFY\\gumi06_07th_leegideok\\work_android_network\\03.BleControl\\app\\src\\main\\res\\drawable-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\SSAFY\\gumi06_07th_leegideok\\work_android_network\\03.BleControl\\app\\build\\intermediates\\res\\merged\\debug\\menu_main.xml.flat",
+        "source": "C:\\SSAFY\\gumi06_07th_leegideok\\work_android_network\\03.BleControl\\app\\src\\main\\res\\menu\\main.xml"
+    },
+    {
+        "merged": "C:\\SSAFY\\gumi06_07th_leegideok\\work_android_network\\03.BleControl\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_launcher.png.flat",
+        "source": "C:\\SSAFY\\gumi06_07th_leegideok\\work_android_network\\03.BleControl\\app\\src\\main\\res\\drawable-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\SSAFY\\gumi06_07th_leegideok\\work_android_network\\03.BleControl\\app\\build\\intermediates\\res\\merged\\debug\\layout_devicelistitem.xml.flat",
+        "source": "C:\\SSAFY\\gumi06_07th_leegideok\\work_android_network\\03.BleControl\\app\\src\\main\\res\\layout\\devicelistitem.xml"
+    },
+    {
+        "merged": "C:\\SSAFY\\gumi06_07th_leegideok\\work_android_network\\03.BleControl\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_launcher.png.flat",
+        "source": "C:\\SSAFY\\gumi06_07th_leegideok\\work_android_network\\03.BleControl\\app\\src\\main\\res\\drawable-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\SSAFY\\gumi06_07th_leegideok\\work_android_network\\03.BleControl\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\SSAFY\\gumi06_07th_leegideok\\work_android_network\\03.BleControl\\app\\src\\main\\res\\drawable-xxhdpi\\ic_launcher.png"
+    }
+]

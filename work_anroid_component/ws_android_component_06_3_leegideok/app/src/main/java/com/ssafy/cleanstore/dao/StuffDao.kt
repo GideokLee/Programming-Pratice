@@ -84,7 +84,7 @@ class StuffDao {
         return sqlDB.delete(TABLE_NAME, "$STUFF_ID = ?", arrayOf(stuffId.toString()))
     }
 
-    inner class DBHelper(context: Context) : SQLiteOpenHelper(context, DB_NAME, null, 1) {
+    inner class DBHelper(context: Context) : SQLiteOpenHelper(context, DB_NAME, null, 2) {
         
         // 테이블 생성
         override fun onCreate(db: SQLiteDatabase?) {

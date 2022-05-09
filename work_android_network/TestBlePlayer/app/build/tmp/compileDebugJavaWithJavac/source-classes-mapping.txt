@@ -1,0 +1,2 @@
+com/lg/conn/testbleplayer/BuildConfig.java
+ com.lg.conn.testbleplayer.BuildConfig
