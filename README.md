@@ -1,2 +1,2 @@
-# GUMI06_07th_이기덕
+# Android, Spring, Flutter Programing practice
 
